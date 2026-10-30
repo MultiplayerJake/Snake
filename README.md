@@ -26,27 +26,36 @@
 
 ## For Players
 
-Written for someone who just wants to play. Windows-first, but the commands work everywhere (macOS/Linux variants noted).
+Written for someone who just wants to play. The easiest path is a single download; running from source is provided as an alternative below (macOS/Linux variants noted).
 
-### 1. Get the game
+### Download the game (recommended, Windows)
 
-Clone it with git:
+1. **Download `QuickSnake.exe` (~13 MB)** from the [releases page](https://github.com/MultiplayerJake/Snake/releases) — or grab it with the [direct download link](https://github.com/MultiplayerJake/Snake/releases/download/Snake/QuickSnake.exe).
+2. **Double-click it to play.** It's a single self-contained Windows file — no Python, no installation, nothing else needed.
+
+On first run it creates its data files (settings, stats, sound effects, the `music/` folder) in the same folder as the exe — that's simply where your saves live.
+
+> Windows may show a "Windows protected your PC" screen the first time you run a game you downloaded — that's a normal thing for downloaded apps: click **More info** → **Run anyway**.
+
+### Or run from source
+
+For players without Windows, or anyone who wants the source code. Get the code either by cloning it with git:
 
 ```bash
-git clone https://github.com/MultiplayerJake/quick-snake.git
-cd quick-snake
+git clone https://github.com/MultiplayerJake/Snake.git
+cd Snake
 ```
 
-No git? On the GitHub page, click the green **Code** button → **Download ZIP**, then unzip it anywhere.
+or without git: the [releases page](https://github.com/MultiplayerJake/Snake/releases) also offers GitHub's **Source code (zip)** / **(tar.gz)** buttons — download and unzip anywhere (the repo's green **Code** button → **Download ZIP** does the same).
 
-### 2. Install Python
+#### 1. Install Python
 
 Download Python from [python.org](https://www.python.org/downloads/) and run the installer.
 
 - **Windows:** tick **"Add Python to PATH"** on the first installer screen before clicking *Install Now*.
 - The game is tested on **Python 3.12**; anything from **3.10** up should work.
 
-### 3. Install the one dependency
+#### 2. Install the one dependency
 
 Open a terminal (PowerShell on Windows) in the game folder and run:
 
@@ -56,7 +65,7 @@ pip install -r requirements.txt
 
 That installs **pygame 2.6.1** — the only dependency. If your shell doesn't know `pip`, use `py -m pip install -r requirements.txt` (Windows) or `python3 -m pip install -r requirements.txt` (macOS/Linux).
 
-### 4. Play
+#### 3. Play
 
 ```bash
 python main.py
@@ -149,7 +158,7 @@ The `music/` folder sits next to `main.py` and is **created automatically** the 
 ### Project structure
 
 ```
-quick-snake/
+Snake/
 ├── main.py               # entry point: window creation, main loop, screen dispatch
 ├── .gitignore            # excludes caches, build output + per-machine user data
 ├── requirements.txt      # pygame==2.6.1 (the only dependency)
