@@ -1,0 +1,39 @@
+# Environments / caches.
+.venv/
+__pycache__/
+*.py[cod]
+
+# Build artifacts.
+build/
+dist/
+
+# Live per-machine user data - never commit.
+settings.json
+settings.json.bak
+stats.dat
+
+# Auto-regenerated at first run by game/audio.py (guarded) - never commit.
+sfx/
+
+# Editor / OS noise.
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Player's own background music (copyrighted third-party tracks - local only).
+music/*
+
+# Test / tooling caches.
+.pytest_cache/
+*.log
+
+# Windows folder customization.
+desktop.ini
+
+# my documentation.
+plan.md
+plan_pseudocode.md
+changelog.md
+GITHUB_READY.md
+DOCUMENTATION.md
