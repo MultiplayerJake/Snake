@@ -2,12 +2,11 @@
 
 *A speedy little snake* — a borderless-fullscreen, neon-drenched arcade snake game: a 25×25 grid, three game modes, a procedurally drawn cyber-city skyline and synth sound effects. Pure Python + pygame, nothing extra to install.
 
-> 🎬 **Preview video** — replace this block with the gameplay video/GIF.
->
-> <!-- EMBED LATER (uncomment ONE of these, after putting the recording in docs/):
->     GIF:  ![Quick Snake gameplay](docs/preview.gif)
->     MP4:  <video src="docs/preview.mp4" width="720" controls></video>
-> -->
+
+
+https://github.com/user-attachments/assets/5bdff4df-a0a7-454a-a867-13671f2ea865
+
+
 
 ## Features
 
